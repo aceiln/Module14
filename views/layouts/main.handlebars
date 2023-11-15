@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheBlog!</title>
+    <link rel="stylesheet" href="/public/css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div>
+            Super Neat and Cool Blog.
+        </div>
+        <a href="/">Home</a>
+        <a href="/dashboard">Dashboard</a>
+        {{#if loggedIn}}
+        <a href="/logout" id="logout-btn">Logout</a>
+        {{else}}
+        <a href="/login">Login</a>
+    </nav>
+    <main>
+        {{{body}}}
+    </main>
+    </div>
+</body>

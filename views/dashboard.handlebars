@@ -1,0 +1,31 @@
+<div>
+    <h2>Dashboard</h2></br>
+    <div>
+        <h3>Create a new post</h3>
+        <form>
+            <div>
+                <label for="articleTitle">Post title:</label>
+                <input type="text" id="articleTitle" name="articleTitle"/>
+            </div>
+            <div>
+                <label for="articleContent">Body: </label>
+                <textarea id="articleContent" name="articleContent"></textarea>
+            </div>
+            <button type="submit">Create Article</button>
+        </form>
+    </div>
+
+    <div>
+        {{#each userDashboard}}
+        <div>
+            <div>
+                <h4><a href="/article/{{this.id}}">{{this.title}}</a></h4>
+                <p>{{this.content}}</p>
+                <a href="/dashboard/edit/{{this.id}}">Edit</a> | <a href="#" class="delete-btn" data-id="{{this.id}}">Delete</a>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+
+<script src="/public/js/addPost.js"></script>

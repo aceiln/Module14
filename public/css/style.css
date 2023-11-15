@@ -1,0 +1,36 @@
+:root {
+    --background: #1D3557;
+    --navbackground: #0b1421;
+    --header: #A8DADC;
+    --text: #457B9D;
+    --links: #d6e1dd;
+    --accent: #d93d4a;
+}
+
+*{
+    background-color: var(--background);
+}
+
+nav {
+    background-color: var(--navbackground)!important;
+    color: var(--text);
+}
+nav.a{
+    color: var(--links)
+}
+nav.a:hover{
+    color: #88a399;
+}
+
+body {
+    color: var(--text);
+    text-align: left;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--header)
+}
+
+p {
+    color: var(--text)
+}
